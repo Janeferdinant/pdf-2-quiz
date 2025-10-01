@@ -1,17 +1,7 @@
-:root{--accent:#0066ff;--bg:#fafafa;--card:#fff}
-*{box-sizing:border-box}
-body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;margin:0;background:var(--bg);color:#111}
-.container{max-width:900px;margin:32px auto;padding:20px}
-.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(10,10,10,0.06)}
-.header{display:flex;gap:12px;align-items:center}
-.h1{font-size:20px;font-weight:700}
-.form-row{margin:12px 0}
-.button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
-.button[disabled]{opacity:0.5}
-.input,select{padding:8px;border-radius:8px;border:1px solid #ddd;width:100%}
-.quiz-question{margin-top:18px}
-.option{padding:10px;border-radius:8px;border:1px solid #ddd;margin:8px 0;cursor:pointer}
-.option.selected{background:#eef3ff;border-color:#bcd1ff}
-.timer{font-weight:700}
-.result{margin-top:16px}
-.small{font-size:13px;color:#555}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
