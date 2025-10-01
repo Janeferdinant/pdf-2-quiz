@@ -1,125 +1,153 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react';
 
 export default function Home() {
-  const [file, setFile] = useState(null)
-  const [difficulty, setDifficulty] = useState('medium')
-  const [numQuestions, setNumQuestions] = useState(10)
-  const [types, setTypes] = useState('both')
-  const [loading, setLoading] = useState(false)
-  const [quiz, setQuiz] = useState(null)
-  const [error, setError] = useState(null)
+  const [quiz, setQuiz] = useState(null);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [isFinished, setIsFinished] = useState(false);
 
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [answers, setAnswers] = useState({})
-  const [timeLeft, setTimeLeft] = useState(null)
-  const timerRef = useRef(null)
+  const startQuiz = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const res = await fetch('/api/generate-quiz', {
+      method: 'POST',
+      body: formData,
+    });
+    const data = await res.json();
+    setQuiz(data);
+    setCurrentQuestion(0);
+    setAnswers([]);
+    setIsFinished(false);
+  };
 
-  useEffect(() => {
-    if (!quiz) return
-    const q = quiz.questions[currentIndex]
-    if (!q) return
-    setTimeLeft(q.timeLimitSeconds || (difficulty === 'easy' ? 30 : difficulty === 'hard' ? 60 : 45))
-    return () => clearInterval(timerRef.current)
-  }, [quiz, currentIndex])
+  const handleAnswer = (answer) => {
+    const question = quiz.questions[currentQuestion];
+    const correctAnswer = question.answer;
 
-  useEffect(() => {
-    if (timeLeft == null) return
-    clearInterval(timerRef.current)
-    timerRef.current = setInterval(() => {
-      setTimeLeft(t => {
-        if (t <= 1) {
-          clearInterval(timerRef.current)
-          setCurrentIndex(i => Math.min(i + 1, quiz.questions.length - 1))
-          return 0
-        }
-        return t - 1
-      })
-    }, 1000)
-    return () => clearInterval(timerRef.current)
-  }, [timeLeft])
+    setAnswers((prev) => [
+      ...prev,
+      {
+        id: question.id,
+        question: question.question,
+        userAnswer: answer,
+        correctAnswer,
+        explanation: question.explanation,
+      },
+    ]);
 
-  function handleFile(e) { setFile(e.target.files[0]) }
+    if (currentQuestion + 1 < quiz.questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setIsFinished(true);
+    }
+  };
 
-  async function handleSubmit(e) {
-    e.preventDefault()
-    setError(null)
-    if (!file) return setError('Please choose a PDF file')
-    setLoading(true)
-    const fd = new FormData()
-    fd.append('file', file)
-    fd.append('difficulty', difficulty)
-    fd.append('numQuestions', String(numQuestions))
-    fd.append('types', types)
-
-    try {
-      const res = await fetch('/api/generate-quiz', { method: 'POST', body: fd })
-      if (!res.ok) throw new Error(await res.text())
-      const data = await res.json()
-      if (!data.quiz) throw new Error('No quiz returned')
-      setQuiz(data.quiz)
-      setCurrentIndex(0)
-      setAnswers({})
-    } catch (err) {
-      setError(err.message || 'Error')
-    } finally { setLoading(false) }
-  }
-
-  function selectOption(qIndex, optIndex) {
-    setAnswers(a => ({ ...a, [qIndex]: optIndex }))
-    setTimeout(() => setCurrentIndex(i => Math.min(i + 1, quiz.questions.length - 1)), 300)
-  }
+  const restartQuiz = () => {
+    setQuiz(null);
+    setCurrentQuestion(0);
+    setAnswers([]);
+    setIsFinished(false);
+  };
 
   if (!quiz) {
-    return (<div className="container"><div className="card">
-      <div className="h1">PDF → Quiz (Gemini)</div>
-      <form onSubmit={handleSubmit}>
-        <div className="form-row"><label className="small">PDF file</label>
-          <input className="input" type="file" accept="application/pdf" onChange={handleFile} />
-        </div>
-        <div className="form-row"><label className="small">Difficulty</label>
-          <select className="input" value={difficulty} onChange={e=>setDifficulty(e.target.value)}>
-            <option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option>
-          </select></div>
-        <div className="form-row"><label className="small">Number of questions</label>
-          <input className="input" type="number" min={1} max={100} value={numQuestions} onChange={e=>setNumQuestions(Number(e.target.value))} />
-        </div>
-        <div className="form-row"><label className="small">Question types</label>
-          <select className="input" value={types} onChange={e=>setTypes(e.target.value)}>
-            <option value="both">Both</option><option value="mcq">MCQ</option><option value="tf">True/False</option>
-          </select></div>
-        <button className="button" disabled={loading}>{loading? 'Generating...' : 'Generate Quiz'}</button>
-        {error && <div style={{color:'red'}}>{error}</div>}
-      </form>
-    </div></div>)
+    return (
+      <div className="p-6 max-w-xl mx-auto">
+        <h1 className="text-2xl font-bold mb-4">PDF Quiz Generator</h1>
+        <form onSubmit={startQuiz} className="space-y-4">
+          <input type="file" name="file" accept="application/pdf" required className="block w-full" />
+          <div>
+            <label className="block mb-1">Difficulty</label>
+            <select name="difficulty" className="w-full border p-2 rounded">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <div>
+            <label className="block mb-1">Number of Questions</label>
+            <input type="number" name="numQuestions" defaultValue="5" className="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label className="block mb-1">Question Types</label>
+            <select name="types" className="w-full border p-2 rounded">
+              <option value="both">Both</option>
+              <option value="multiple_choice">Multiple Choice</option>
+              <option value="true_false">True/False</option>
+            </select>
+          </div>
+          <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Generate Quiz</button>
+        </form>
+      </div>
+    );
   }
 
-  const q = quiz.questions[currentIndex]
-  const total = quiz.questions.length
-  const userAnswer = answers[currentIndex]
-  const finished = currentIndex >= total - 1 && userAnswer != null && Object.keys(answers).length >= total
+  if (isFinished) {
+    const score = answers.filter((a) => a.userAnswer === a.correctAnswer).length;
+    return (
+      <div className="p-6 max-w-2xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Quiz Complete!</h2>
+        <p className="mb-4">Your Score: {score} / {quiz.questions.length}</p>
 
-  if (finished) {
-    let correct = 0
-    quiz.questions.forEach((qq, i)=>{
-      const ua = answers[i]
-      if (ua == null) return
-      if (qq.type === 'true_false') { if ((ua===1) === !!qq.answer) correct++ }
-      else { const idx = 'ABCD'.indexOf(String(qq.answer).toUpperCase()); if (idx===ua) correct++ }
-    })
-    return (<div className="container"><div className="card">
-      <h2>Results</h2><div className="small">Score: {correct}/{total}</div>
-      {quiz.questions.map((qq,i)=>(<div key={i}><strong>Q{i+1}</strong> {qq.question}</div>))}
-      <button className="button" onClick={()=>{setQuiz(null);setAnswers({});setCurrentIndex(0)}}>Restart</button>
-    </div></div>)
+        <div className="space-y-4">
+          {answers.map((a, i) => (
+            <div key={i} className="p-4 border rounded-lg shadow-sm">
+              <p className="font-semibold">{a.question}</p>
+              <p>Your Answer: <span className={a.userAnswer === a.correctAnswer ? "text-green-600" : "text-red-600"}>{a.userAnswer.toString()}</span></p>
+              <p>Correct Answer: <span className="text-green-700">{a.correctAnswer.toString()}</span></p>
+              <p className="text-sm text-gray-600">Explanation: {a.explanation}</p>
+            </div>
+          ))}
+        </div>
+
+        <button
+          onClick={restartQuiz}
+          className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+        >
+          Restart Quiz
+        </button>
+      </div>
+    );
   }
 
-  return (<div className="container"><div className="card">
-    <div>Question {currentIndex+1}/{total} <span className="timer">({timeLeft}s)</span></div>
-    <div>{q.question}</div>
-    {q.type==='true_false'? (<div>
-      {[{label:'True',idx:1},{label:'False',idx:0}].map(o=>(<div key={o.idx} className={`option ${answers[currentIndex]===o.idx?'selected':''}`} onClick={()=>selectOption(currentIndex,o.idx)}>{o.label}</div>))}
-    </div>) : (<div>
-      {(q.options||[]).map((opt,i)=>(<div key={i} className={`option ${answers[currentIndex]===i?'selected':''}`} onClick={()=>selectOption(currentIndex,i)}><strong>{'ABCD'[i]}.</strong> {opt}</div>))}
-    </div>)}
-  </div></div>)
+  const question = quiz.questions[currentQuestion];
+
+  return (
+    <div className="p-6 max-w-xl mx-auto">
+      <h2 className="text-xl font-bold mb-4">
+        Question {currentQuestion + 1} of {quiz.questions.length}
+      </h2>
+      <p className="mb-4">{question.question}</p>
+
+      {question.type === "multiple_choice" && (
+        <div className="space-y-2">
+          {question.options.map((opt, i) => (
+            <button
+              key={i}
+              onClick={() => handleAnswer(opt)}
+              className="w-full px-4 py-2 border rounded-lg hover:bg-gray-100"
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {question.type === "true_false" && (
+        <div className="space-y-2">
+          <button
+            onClick={() => handleAnswer(true)}
+            className="w-full px-4 py-2 border rounded-lg hover:bg-gray-100"
+          >
+            True
+          </button>
+          <button
+            onClick={() => handleAnswer(false)}
+            className="w-full px-4 py-2 border rounded-lg hover:bg-gray-100"
+          >
+            False
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }
