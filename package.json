@@ -1,5 +1,5 @@
 {
-  "name": "pdf-quiz-gemini-webapp",
+  "name": "quiz-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.3.0",
-    "formidable": "^3.5.0",
-    "next": "13.4.12",
+    "next": "13.5.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "3.4.1",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.35",
+    "framer-motion": "10.16.4",
+    "@google/generative-ai": "0.5.0",
+    "formidable": "3.5.1",
+    "pdf-parse": "1.1.1"
   }
 }

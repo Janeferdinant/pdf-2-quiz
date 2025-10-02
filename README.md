@@ -1,22 +1,17 @@
-# PDF Quiz Gemini Webapp
+# Quiz App
 
 ## Setup
-
+1. Install dependencies
 ```bash
 npm install
-npm run dev
 ```
-
-Add `.env.local` with:
-
+2. Add your Gemini API key to `.env.local`:
 ```
-GEMINI_API_KEY=your_key_here
+GOOGLE_API_KEY=your_api_key_here
 GEMINI_MODEL=gemini-2.5-flash-lite
 ```
-
-## Deploy
-
-- Push repo to GitHub
-- Import into Vercel
-- Set env var GEMINI_API_KEY in Vercel dashboard
-- Deploy
+3. Run locally
+```bash
+npm run dev
+```
+4. Open http://localhost:3000
