@@ -1,3 +1,7 @@
+// LEGACY, NOT USED. This was the server-side API route (pages/api/generate-quiz.js) from version 1.
+// Version 2 runs entirely in the browser (see lib/), so this file is not built, imported or served,
+// and its dependencies (formidable, pdf-parse, @google/generative-ai) are no longer installed.
+// Kept only until the owner approves deleting it.
 import formidable from 'formidable'
 import fs from 'fs'
 import pdfParse from 'pdf-parse'
