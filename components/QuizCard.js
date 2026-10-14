@@ -1,20 +1,25 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 export default function QuizCard({ q, onAnswer }) {
+  const isTrueFalse = q.type === 'true_false'
   return (
     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="card">
-      <div className="mb-4 font-semibold">{q.question}</div>
-      <div className="space-y-3">
-        {q.options && q.options.map((opt, i) => (
-          <button key={i} onClick={() => onAnswer(i)} className="w-full pill bg-primary text-white hover:scale-105 transform transition">{opt}</button>
+      <p className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        {isTrueFalse ? 'True or false' : 'Multiple choice'}
+      </p>
+      <h2 className="mb-4 text-lg font-semibold">{q.question}</h2>
+      <div className={isTrueFalse ? 'grid grid-cols-2 gap-3' : 'space-y-3'}>
+        {q.options.map((opt, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => onAnswer(i)}
+            className="w-full rounded-xl bg-primary px-4 py-3 text-left font-medium text-white transition hover:bg-primary-dark"
+          >
+            {opt}
+          </button>
         ))}
-        {!q.options && (
-          <div className="flex gap-3">
-            <button onClick={() => onAnswer(0)} className="flex-1 pill bg-primary text-white">True</button>
-            <button onClick={() => onAnswer(1)} className="flex-1 pill bg-gray-200 dark:bg-gray-700">False</button>
-          </div>
-        )}
       </div>
     </motion.div>
-  );
+  )
 }
