@@ -6,6 +6,8 @@
 
 PDF to Quiz is a small web app that reads a PDF in your browser and asks Google Gemini to write multiple-choice and true/false questions from its text. You take the quiz with a per-question timer and get a score and an answer key. It has no server: you paste your own Gemini API key, and the key and the PDF never touch any server of mine.
 
+I use it to show generative-AI-assisted assessment in the courses I teach.
+
 ## Demo
 
 There is no hosted demo yet. Run it locally (see Getting started). The screenshots show the interface; the results screenshot was produced in a test with a **mocked** Gemini reply, not a real model.
