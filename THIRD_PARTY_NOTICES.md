@@ -1,6 +1,6 @@
 # Third-party notices
 
-Original work in this repository is © Jane Rose Ferdinant, licensed CC BY-NC-SA 4.0 (see LICENSE). The components below are not covered by that license. Each keeps its own license, reproduced from the installed package. Versions are those in package-lock.json. Development-only tools (Playwright, PostCSS, @tailwindcss/postcss) are not shipped in the built site; their licenses are in their packages. Further transitive dependencies are installed under their own licenses; list them with `npm ls --all` and `npm view <package> license`.
+Original work in this repository is © Jane Rose Ferdinant, licensed CC BY-NC-ND 4.0 (see LICENSE). The components below are not covered by that license. Each keeps its own license, reproduced from the installed package. Versions are those in package-lock.json. Development-only tools (Playwright, PostCSS, @tailwindcss/postcss) are not shipped in the built site; their licenses are in their packages. Further transitive dependencies are installed under their own licenses; list them with `npm ls --all` and `npm view <package> license`.
 
 | Component | Version | License | Source |
 |---|---|---|---|
