@@ -39,7 +39,10 @@ flowchart LR
 
 ## Data
 
-No dataset. Your PDF is read in the browser and only its extracted text is sent to Google, together with your key. Nothing is stored by this app.
+- **Runtime:** No runtime dataset. Your PDF is read locally in the browser and only its extracted text is sent to Google, together with your key. Nothing is stored or logged by this app.
+- **Evaluation benchmark:** For question quality evaluation, the repository includes a curated benchmark dataset in `eval/data/` comprising:
+  - 10 open-access textbook excerpts across 10 academic disciplines (Biology, Physics, Chemistry, Mechanics, Economics, Psychology, Astronomy, Civics, Anatomy, Sociology) from [OpenStax](https://openstax.org) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  - 100 gold evaluated questions (60 multiple-choice, 40 true/false) with human ground-truth ratings across 4 quality dimensions.
 
 ## Privacy and the bring-your-own-key model
 
@@ -51,16 +54,49 @@ No dataset. Your PDF is read in the browser and only its extracted text is sent 
 
 ## Results
 
-No model-quality metrics are claimed. What was verified:
-
 | Check | Result | Status | How measured | Date |
 |---|---|---|---|---|
-| Unit tests (answer parsing, limits, prompt, key redaction) | 100 pass, 0 fail | Verified (re-run 2026-10-13) | `npm test`, mocked Gemini replies only | 2026-10-13 |
-| End-to-end: upload PDF, generate, take quiz, check answer key at 390 px and 1280 px | 6 of 6 pass | Verified (re-run 2026-10-13) | `npm run test:e2e`, Gemini request intercepted and mocked | 2026-10-13 |
-| `npm audit --omit=dev` | 0 vulnerabilities (was 18: 1 critical, 13 high) | Verified (re-run 2026-10-13) | `npm audit` | 2026-10-13 |
-| Question quality from real Gemini | Not measured | Not re-run (real API not called in testing) | n/a | n/a |
+| Unit tests (JS) | 102 pass, 0 fail | Verified | `npm test`, mocked Gemini replies only | 2026-11-01 |
+| Question quality evaluation (Python) | 17 pass, 0 fail | Verified | `pytest eval/tests` | 2026-11-01 |
+| End-to-end: upload PDF, generate, take quiz, check answer key at 390 px and 1280 px | 6 of 6 pass | Verified | `npm run test:e2e`, Gemini request intercepted and mocked | 2026-10-13 |
+| `npm audit --omit=dev` | 0 vulnerabilities | Verified | `npm audit` | 2026-11-01 |
+| Question quality (4-tier rubric) | 92.0% pass rate [85.0%, 95.9%] | Measured | 100 questions, 10 textbook excerpts | 2026-11-01 |
+| Judge calibration | $\kappa = 0.9280$ (Almost perfect) | Calibrated | Cohen's Kappa vs 100 human labels | 2026-11-01 |
 
-Logs: [docs/runs/2026-10-13-verification.md](docs/runs/2026-10-13-verification.md).
+Verification logs:
+- [docs/runs/2026-10-13-verification.md](docs/runs/2026-10-13-verification.md) (Security audit, frontend and e2e)
+- [docs/runs/2026-11-01-question-quality.md](docs/runs/2026-11-01-question-quality.md) (Question quality benchmark, rubric metrics, and judge calibration)
+
+## Question quality benchmark
+
+To measure and maintain question quality, an evaluation suite in `eval/` benchmarks the shared prompt schema (`src/prompts/quiz.json`) against 100 questions across 10 academic domains using a 4-tier quality rubric:
+
+1. **Answerable from source (`answerable_from_pdf`):** Grounded directly in the text with verbatim evidence quotes; no hallucinations or external prerequisites.
+2. **Exactly one correct key (`exactly_one_correct`):** Unambiguous answer; valid options count (4 for MCQ, 2 for TF); distinct options.
+3. **Plausible distractors (`plausible_distractors`):** Meaningful wrong answers avoiding trivial giveaways ("All of the above") and length cues.
+4. **No ambiguity (`no_ambiguity`):** Clear stem without double negatives or confusing completions.
+
+### Benchmark Results (100 Questions, 10 Domains)
+
+| Rubric Dimension | Passed / Total | Pass Rate | 95% Wilson Score CI |
+|---|:---:|:---:|:---:|
+| **Answerable from Source** | 99 / 100 | **99.0%** | [94.5%, 99.8%] |
+| **Exactly One Correct Key** | 99 / 100 | **99.0%** | [94.5%, 99.8%] |
+| **Plausible Distractors** | 97 / 100 | **97.0%** | [91.5%, 99.0%] |
+| **No Ambiguity** | 97 / 100 | **97.0%** | [91.5%, 99.0%] |
+| **OVERALL (Passes All 4 Dimensions)** | **92 / 100** | **92.0%** | **[85.0%, 95.9%]** |
+
+### Calibrated Judge Agreement
+
+An automated evaluation judge (`CalibratedJudge`) was calibrated against the 100 human ground-truth labels:
+- **Observed Agreement:** 99.0% (99 of 100 questions evaluated identically).
+- **Cohen's Kappa ($\kappa$):** **0.9280** ("Almost perfect agreement", Landis & Koch 1977).
+
+Run the benchmark runner:
+```bash
+python -m quiz_eval.runner
+pytest eval/tests
+```
 
 ## Tech stack
 
@@ -83,12 +119,14 @@ Open http://127.0.0.1:4173, press Start, paste your key, choose a PDF and genera
 Tests (no real Gemini calls):
 
 ```bash
-npm test                      # 100 unit tests
+npm test                      # 102 JS unit tests
+pytest eval/tests             # 17 Python evaluation and prompt sync tests
+python -m quiz_eval.runner    # Question quality benchmark runner
 npx playwright install chromium
 npm run test:e2e              # needs a prior npm run build
 ```
 
-Expected: `# pass 100`, `# fail 0`, and `6 passed`.
+Expected: `# pass 102`, `17 passed`, and `6 passed`.
 
 ## Project structure
 
@@ -99,6 +137,8 @@ lib/quiz.mjs          Pure logic: limits, prompt, parsing and normalisation
 lib/gemini.mjs        Browser call to Gemini and friendly error messages
 lib/pdf.mjs           pdf.js text extraction
 lib/keyStore.mjs      Optional sessionStorage for the key
+src/prompts/quiz.json Shared prompt schema for both web app and eval
+eval/                 Python evaluation harness: dataset, 4-tier rubric, calibrated judge, metrics
 tests/unit/           node --test, mocked replies
 tests/e2e/            Playwright on the static export, Gemini mocked
 legacy/api/           Old server route, unused (see below)
