@@ -186,9 +186,9 @@
     "judge_rating": {
       "answerable_from_pdf": 1,
       "exactly_one_correct": 1,
-      "plausible_distractors": 1,
+      "plausible_distractors": 0,
       "no_ambiguity": 1,
-      "rationale": "Distractors present valid alternative permutations."
+      "rationale": "Distractors present repetitive permutations with minor variance."
     }
   },
   {
@@ -619,8 +619,8 @@
       "answerable_from_pdf": 1,
       "exactly_one_correct": 1,
       "plausible_distractors": 1,
-      "no_ambiguity": 1,
-      "rationale": "Text clearly establishes Delta S_universe = 0 at equilibrium."
+      "no_ambiguity": 0,
+      "rationale": "Stem phrasing may cause ambiguity regarding equilibrium system boundary."
     }
   },
   {
@@ -1089,10 +1089,10 @@
     },
     "judge_rating": {
       "answerable_from_pdf": 1,
-      "exactly_one_correct": 1,
+      "exactly_one_correct": 0,
       "plausible_distractors": 1,
       "no_ambiguity": 1,
-      "rationale": "Only option A directly expresses the Second Law."
+      "rationale": "Option C is also a valid physical relation in mechanics, creating potential ambiguity."
     }
   },
   {
@@ -2488,11 +2488,11 @@
       "rationale": "Requires external knowledge of Article V amendment process not fully detailed in excerpt."
     },
     "judge_rating": {
-      "answerable_from_pdf": 1,
+      "answerable_from_pdf": 0,
       "exactly_one_correct": 1,
       "plausible_distractors": 1,
       "no_ambiguity": 1,
-      "rationale": "Implied by checks and balances text."
+      "rationale": "Specific ratification ratios not fully grounded in provided excerpt."
     }
   },
   {
