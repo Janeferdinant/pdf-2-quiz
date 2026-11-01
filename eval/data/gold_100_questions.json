@@ -1,0 +1,3122 @@
+[
+  {
+    "question": {
+      "id": "q001",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Where in the cell does glycolysis take place?",
+      "options": [
+        "Mitochondrial matrix",
+        "Cytoplasm",
+        "Inner mitochondrial membrane",
+        "Nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Glycolysis occurs in the cytoplasm of both prokaryotic and eukaryotic cells.",
+      "evidence": "Glycolysis occurs in the cytoplasm of both prokaryotic and eukaryotic cells and does not require oxygen"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Directly answerable, clear options, single correct key."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Factually verified in source text."
+    }
+  },
+  {
+    "question": {
+      "id": "q002",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the net yield of ATP produced per glucose molecule during glycolysis?",
+      "options": [
+        "30 to 32 ATP",
+        "4 ATP",
+        "2 ATP",
+        "26 to 28 ATP"
+      ],
+      "answer": 2,
+      "explanation": "Glycolysis yields a net of 2 ATP molecules after consuming 2 and producing 4.",
+      "evidence": "resulting in a net yield of two ATP and two NADH per glucose molecule."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurate net yield stated in source."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Consistent with text."
+    }
+  },
+  {
+    "question": {
+      "id": "q003",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What chemical group is removed from pyruvate during pyruvate oxidation to form acetyl-CoA?",
+      "options": [
+        "Carboxyl group",
+        "Phosphate group",
+        "Hydroxyl group",
+        "Amino group"
+      ],
+      "answer": 0,
+      "explanation": "The pyruvate dehydrogenase complex removes a carboxyl group, releasing carbon dioxide.",
+      "evidence": "The pyruvate dehydrogenase complex removes a carboxyl group from pyruvate, releasing carbon dioxide"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear factual detail, plausible functional groups as distractors."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Supported by text."
+    }
+  },
+  {
+    "question": {
+      "id": "q004",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which molecule acts as the terminal electron acceptor at Complex IV of the electron transport chain?",
+      "options": [
+        "NAD+",
+        "FAD",
+        "Molecular oxygen (O2)",
+        "Cytochrome c"
+      ],
+      "answer": 2,
+      "explanation": "Molecular oxygen accepts electrons at Complex IV and combines with protons to form water.",
+      "evidence": "Molecular oxygen (O2) acts as the terminal electron acceptor at Complex IV"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Precise fact from text, strong plausible options."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q005",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What drives the phosphorylation of ADP to generate ATP during chemiosmosis?",
+      "options": [
+        "Protons flowing down an electrochemical gradient through ATP synthase",
+        "Direct electron transfer from NADH to the ATP synthase rotor",
+        "Oxidation of carbon dioxide in the intermembrane space",
+        "Dephosphorylation of glucose within the mitochondrial cristae"
+      ],
+      "answer": 0,
+      "explanation": "Chemiosmosis harnesses the proton motive force through ATP synthase to phosphorylate ADP.",
+      "evidence": "protons flow down their electrochemical gradient back into the mitochondrial matrix through ATP synthase."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Conceptual synthesis question with high plausibility distractors."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurately represents mechanism."
+    }
+  },
+  {
+    "question": {
+      "id": "q006",
+      "source_id": "src01_cellular_respiration",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "How many turns of the citric acid cycle occur per original glucose molecule, and how many NADH are produced per cycle turn?",
+      "options": [
+        "Turns 1 time, produces 6 NADH",
+        "Turns 2 times, produces 3 NADH per turn",
+        "Turns 2 times, produces 6 NADH per turn",
+        "Turns 4 times, produces 1 NADH per turn"
+      ],
+      "answer": 1,
+      "explanation": "The cycle turns twice per glucose, producing 3 NADH per turn (6 total).",
+      "evidence": "three molecules of NAD+ are reduced to NADH... cycle turns twice per glucose."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Distractor options ('Turns 1 time, produces 6 NADH') are somewhat repetitive."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Distractors present repetitive permutations with minor variance."
+    }
+  },
+  {
+    "question": {
+      "id": "q007",
+      "source_id": "src01_cellular_respiration",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Glycolysis requires molecular oxygen in order to break down glucose into pyruvate.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Glycolysis is an anaerobic process that does not require oxygen.",
+      "evidence": "does not require oxygen, meaning it is an anaerobic process."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Straightforward TF testing definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Correct."
+    }
+  },
+  {
+    "question": {
+      "id": "q008",
+      "source_id": "src01_cellular_respiration",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "During oxidative phosphorylation, Complexes I, III, and IV pump protons into the mitochondrial intermembrane space.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Protons are pumped by Complexes I, III, and IV from the matrix into the intermembrane space.",
+      "evidence": "As electrons move through Complexes I, III, and IV, protons (H+) are pumped from the mitochondrial matrix into the intermembrane space"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Factually precise true statement."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q009",
+      "source_id": "src01_cellular_respiration",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Oxidative phosphorylation occurs primarily on the outer mitochondrial membrane.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Oxidative phosphorylation takes place on the inner mitochondrial membrane (cristae).",
+      "evidence": "The final stage of aerobic respiration is oxidative phosphorylation, which takes place on the inner mitochondrial membrane (cristae)."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Good distractor concept (outer vs inner)."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Correct."
+    }
+  },
+  {
+    "question": {
+      "id": "q010",
+      "source_id": "src01_cellular_respiration",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Under optimal aerobic conditions, cellular respiration yields exactly 38 ATP molecules per glucose molecule in human cells.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "The text states the theoretical total maximum yield is approximately 30 to 32 ATP.",
+      "evidence": "bringing the theoretical total maximum yield of aerobic respiration to approximately 30 to 32 ATP per glucose molecule."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Tests text precision against legacy textbook numbers."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Matches text."
+    }
+  },
+  {
+    "question": {
+      "id": "q011",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the mathematical formulation of the First Law of Thermodynamics for the change in internal energy?",
+      "options": [
+        "Delta U = q + w",
+        "Delta G = Delta H - T*Delta S",
+        "H = U + PV",
+        "Delta S_univ > 0"
+      ],
+      "answer": 0,
+      "explanation": "Delta U = q + w, where q is heat absorbed and w is work performed.",
+      "evidence": "Mathematically, the change in internal energy (Delta U) is given by Delta U = q + w"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Standard definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct formula match."
+    }
+  },
+  {
+    "question": {
+      "id": "q012",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What term describes a chemical reaction that releases heat to its surroundings and has a negative Delta H?",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Spontaneous",
+        "Equilibrium"
+      ],
+      "answer": 1,
+      "explanation": "Reactions that release heat have negative Delta H and are termed exothermic.",
+      "evidence": "Reactions that release heat to their surroundings have a negative Delta H and are termed exothermic"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear definition, standard chemistry vocabulary."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q013",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "According to the Second Law of Thermodynamics, what condition must be satisfied for any spontaneous process?",
+      "options": [
+        "Delta S_universe > 0",
+        "Delta S_system > 0",
+        "Delta H_universe < 0",
+        "Delta U_system = 0"
+      ],
+      "answer": 0,
+      "explanation": "The total entropy of the universe (system plus surroundings) must increase for any spontaneous process.",
+      "evidence": "in any spontaneous process, the total entropy of the universe (system plus surroundings) must increase: Delta S_universe = Delta S_system + Delta S_surroundings > 0."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Crucial distinction between system and universe."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Supported by text."
+    }
+  },
+  {
+    "question": {
+      "id": "q014",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "When Gibbs Free Energy change (Delta G) equals zero at constant temperature and pressure, what is the state of the system?",
+      "options": [
+        "Non-spontaneous",
+        "Dynamic equilibrium",
+        "Explosive reaction",
+        "Isolated system"
+      ],
+      "answer": 1,
+      "explanation": "When Delta G equals zero, the chemical system is in dynamic equilibrium.",
+      "evidence": "When Delta G equals zero, the system is in dynamic equilibrium."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear single answer."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q015",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Under what combination of enthalpy and entropy changes is a reaction spontaneous at all temperatures?",
+      "options": [
+        "Exothermic (Delta H < 0) and increases entropy (Delta S > 0)",
+        "Endothermic (Delta H > 0) and increases entropy (Delta S > 0)",
+        "Exothermic (Delta H < 0) and decreases entropy (Delta S < 0)",
+        "Endothermic (Delta H > 0) and decreases entropy (Delta S < 0)"
+      ],
+      "answer": 0,
+      "explanation": "A reaction with negative Delta H and positive Delta S yields negative Delta G at all temperatures.",
+      "evidence": "A reaction that is both exothermic (Delta H < 0) and increases entropy (Delta S > 0) is spontaneous at all temperatures."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Classic 2x2 thermodynamic matrix question."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q016",
+      "source_id": "src02_thermodynamics",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What is the standard enthalpy of formation for pure elements in their most stable reference states at 1 bar and 298.15 K?",
+      "options": [
+        "Undefined",
+        "100 kJ/mol",
+        "0 (zero)",
+        "-273.15 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Pure elements in standard reference states are defined as having an enthalpy of formation of zero.",
+      "evidence": "which are defined as having an enthalpy of formation of zero."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Exact definition from text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q017",
+      "source_id": "src02_thermodynamics",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Energy can be created or destroyed in an isolated system under the First Law of Thermodynamics.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "The first law states energy cannot be created or destroyed, only transformed.",
+      "evidence": "energy cannot be created or destroyed, only transformed from one form to another."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear TF."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Correct."
+    }
+  },
+  {
+    "question": {
+      "id": "q018",
+      "source_id": "src02_thermodynamics",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "At constant pressure, the change in enthalpy (Delta H) equals the heat gained or lost by the system.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Delta H equals q_p in constant pressure processes.",
+      "evidence": "In constant-pressure processes, the change in enthalpy (Delta H) equals the heat gained or lost by the system."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verbatim match from source."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q019",
+      "source_id": "src02_thermodynamics",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "When Delta G is positive, the forward process is spontaneous.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "A positive Delta G indicates the forward reaction is non-spontaneous and the reverse is spontaneous.",
+      "evidence": "When Delta G is positive, the forward process is non-spontaneous, meaning the reverse process is spontaneous."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Key thermodynamic rule."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q020",
+      "source_id": "src02_thermodynamics",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "For a reversible process at equilibrium, the total entropy change of the universe equals zero.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Delta S_universe = 0 for reversible processes at equilibrium.",
+      "evidence": "For a reversible process at equilibrium, Delta S_universe equals zero."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 0,
+      "rationale": "Stem phrasing 'entropy change of the universe equals zero' could confuse open vs isolated systems."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 0,
+      "rationale": "Stem phrasing may cause ambiguity regarding equilibrium system boundary."
+    }
+  },
+  {
+    "question": {
+      "id": "q021",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What type of chemical bonding occurs between elements with large differences in electronegativity, such as metals and nonmetals?",
+      "options": [
+        "Nonpolar covalent",
+        "Ionic bonding",
+        "Metallic bonding",
+        "Coordinate covalent"
+      ],
+      "answer": 1,
+      "explanation": "Ionic bonding occurs when metals transfer electrons to nonmetals due to electronegativity differences.",
+      "evidence": "Ionic bonding occurs primarily between elements with large differences in electronegativity, typically metals and nonmetals."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct factual definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q022",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What property quantifies the stability of an ionic crystalline lattice network?",
+      "options": [
+        "Dipole moment",
+        "Lattice energy",
+        "Ionization potential",
+        "Electronegativity"
+      ],
+      "answer": 1,
+      "explanation": "Lattice energy measures the energy released when gaseous ions coalesce into a solid lattice.",
+      "evidence": "The stability of an ionic lattice is quantified by its lattice energy"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q023",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the typical electronegativity difference range on the Pauling scale for polar covalent bonds?",
+      "options": [
+        "Less than 0.4",
+        "Between 0.4 and 1.8",
+        "Greater than 3.0",
+        "Exactly zero"
+      ],
+      "answer": 1,
+      "explanation": "Polar covalent bonds typically exhibit electronegativity differences between 0.4 and 1.8.",
+      "evidence": "In polar covalent bonds, such as in water (H2O) or hydrogen chloride (HCl), the electronegativity difference (typically between 0.4 and 1.8)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Precise numeric range from text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q024",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "According to VSEPR theory, why do lone pairs distort ideal molecular bond angles?",
+      "options": [
+        "Lone pairs exert greater repulsive forces than bonding pairs",
+        "Lone pairs attract nuclei of surrounding atoms",
+        "Lone pairs contain fewer electrons than bonding pairs",
+        "Lone pairs convert covalent bonds into ionic lattices"
+      ],
+      "answer": 0,
+      "explanation": "Lone pairs exert greater repulsion on adjacent electron clouds than bonding pairs.",
+      "evidence": "Lone pairs exert greater repulsive forces than bonding pairs, distorting ideal bond angles."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Key VSEPR concept."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q025",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What is the molecular geometry and approximate bond angle of a water (H2O) molecule?",
+      "options": [
+        "Linear geometry, 180 degrees",
+        "Trigonal planar geometry, 120 degrees",
+        "Bent geometry, 104.5 degrees",
+        "Tetrahedral geometry, 109.5 degrees"
+      ],
+      "answer": 2,
+      "explanation": "Water has tetrahedral electron geometry but bent molecular geometry with a 104.5 degree bond angle.",
+      "evidence": "yielding a tetrahedral electron geometry but a bent molecular geometry with a bond angle of 104.5 degrees"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Distinguishes electron vs molecular geometry."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q026",
+      "source_id": "src03_chemical_bonding",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following diatomic molecules possesses a nonpolar covalent bond according to the text?",
+      "options": [
+        "Water (H2O)",
+        "Hydrogen chloride (HCl)",
+        "Diatomic nitrogen (N2)",
+        "Sodium chloride (NaCl)"
+      ],
+      "answer": 2,
+      "explanation": "Diatomic nitrogen shares electrons equally with negligible electronegativity difference.",
+      "evidence": "In nonpolar covalent bonds, such as in diatomic nitrogen (N2) or methane (CH4)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct example from text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q027",
+      "source_id": "src03_chemical_bonding",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "In nonpolar covalent bonds, electrons are shared equally because electronegativity differences are negligible.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Nonpolar covalent bonds share electrons equally.",
+      "evidence": "electrons are shared equally between atoms because the electronegativity difference is negligible"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q028",
+      "source_id": "src03_chemical_bonding",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Metals typically have high ionization energies and readily accept electrons to form anions.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Metals have low ionization energies and lose electrons to form cations.",
+      "evidence": "Metals, having low ionization energies and low electronegativity, readily lose valence electrons to form positively charged cations."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Classic distractor inversion."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Correct."
+    }
+  },
+  {
+    "question": {
+      "id": "q029",
+      "source_id": "src03_chemical_bonding",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Polar covalent bonds create a dipole moment where partial negative charge resides on the more electronegative atom.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "More electronegative atoms pull shared electron density, generating partial negative charge.",
+      "evidence": "creating a dipole moment where partial negative charge resides on the more electronegative atom"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurate description."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q030",
+      "source_id": "src03_chemical_bonding",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Water has a tetrahedral molecular geometry with ideal 109.5 degree bond angles.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Water has bent molecular geometry with compressed bond angles of 104.5 degrees.",
+      "evidence": "yielding a tetrahedral electron geometry but a bent molecular geometry with a bond angle of 104.5 degrees"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Subtle distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q031",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What physical property of matter is an intrinsic measure of an object's inertia?",
+      "options": [
+        "Velocity",
+        "Mass",
+        "Acceleration",
+        "Weight"
+      ],
+      "answer": 1,
+      "explanation": "Inertia is directly proportional to mass.",
+      "evidence": "Inertia is an intrinsic property of matter directly proportional to an object's mass."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Basic physics definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q032",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the SI unit of force, equivalent to one kilogram-meter per second squared?",
+      "options": [
+        "Joule",
+        "Pascal",
+        "Newton",
+        "Watt"
+      ],
+      "answer": 2,
+      "explanation": "The newton (N) is defined as 1 kg*m/s^2.",
+      "evidence": "The SI unit of force is the newton (N), defined as one kilogram-meter per second squared."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "SI unit question."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q033",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Why do action and reaction force pairs described in Newton's Third Law never cancel each other out?",
+      "options": [
+        "They always act on different bodies",
+        "Action forces are always greater than reaction forces",
+        "Reaction forces occur after action forces finish",
+        "They only apply to electrostatic fields"
+      ],
+      "answer": 0,
+      "explanation": "Third-law pairs act on two separate objects, so they cannot cancel on a single free body.",
+      "evidence": "Action and reaction forces always act on different bodies and therefore never cancel each other out."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Fundamental physics concept."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q034",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In an isolated system experiencing no external net force, what happens in an elastic collision?",
+      "options": [
+        "Total momentum is conserved, but kinetic energy is lost",
+        "Both total momentum and total kinetic energy are conserved",
+        "Total kinetic energy is conserved, but momentum changes",
+        "The colliding objects stick together and move at common velocity"
+      ],
+      "answer": 1,
+      "explanation": "Elastic collisions conserve both linear momentum and mechanical kinetic energy.",
+      "evidence": "In elastic collisions, both total momentum and total kinetic energy are conserved."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Standard collision taxonomy."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q035",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "How is Newton's Second Law expressed in its general form regarding linear momentum?",
+      "options": [
+        "F_net = dp/dt",
+        "F_net = 1/2 * m * v^2",
+        "p = mv",
+        "F_AB = -F_BA"
+      ],
+      "answer": 0,
+      "explanation": "Net force equals the time derivative of linear momentum (dp/dt).",
+      "evidence": "the net force acting on an object is equal to the rate of change of its linear momentum with respect to time: F_net = dp/dt."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 0,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Option C (p = mv) is also a valid equation for momentum, making question slightly contested."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 0,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Option C is also a valid physical relation in mechanics, creating potential ambiguity."
+    }
+  },
+  {
+    "question": {
+      "id": "q036",
+      "source_id": "src04_classical_mechanics",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What characterizes a completely inelastic collision?",
+      "options": [
+        "Total kinetic energy increases",
+        "Interacting bodies stick together and move with a common final velocity",
+        "Total momentum is not conserved",
+        "No thermal energy is produced"
+      ],
+      "answer": 1,
+      "explanation": "In a completely inelastic collision, the bodies stick together.",
+      "evidence": "In a completely inelastic collision, the interacting bodies stick together after impact and move with a common final velocity."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Definitional collision question."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q037",
+      "source_id": "src04_classical_mechanics",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Linear momentum is a scalar quantity that has magnitude but no direction.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Momentum is a vector quantity pointing in the same direction as velocity.",
+      "evidence": "Momentum is a vector quantity having the same direction as the velocity."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear vector/scalar distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q038",
+      "source_id": "src04_classical_mechanics",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "In inelastic collisions, total momentum is conserved while kinetic energy is partially converted into other energy forms.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Inelastic collisions conserve momentum but convert kinetic energy into heat or deformation.",
+      "evidence": "In inelastic collisions, total momentum is conserved, but kinetic energy is partially converted into thermal energy, sound, or structural deformation."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Supported by text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q039",
+      "source_id": "src04_classical_mechanics",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "An object at rest can spontaneously begin moving without any unbalanced external net force acting on it.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Newton's First Law prohibits change in motion without an external net force.",
+      "evidence": "an object at rest remains at rest... unless acted upon by an unbalanced external net force."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear negation."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q040",
+      "source_id": "src04_classical_mechanics",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Newton's Third Law forces act on the same body, allowing them to balance each other to produce equilibrium.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Action and reaction forces act on different bodies and cannot cancel out.",
+      "evidence": "Action and reaction forces always act on different bodies and therefore never cancel each other out."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Common misconception test."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q041",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Why does GDP count only final goods and services rather than intermediate goods?",
+      "options": [
+        "To avoid double counting inputs in the production process",
+        "Because intermediate goods have no monetary value",
+        "Because intermediate goods are only imported",
+        "To minimize government tax obligations"
+      ],
+      "answer": 0,
+      "explanation": "Counting intermediate goods would double-count their value in the final product.",
+      "evidence": "GDP counts only final goods and services to avoid double counting intermediate goods used as inputs in production."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Core macroeconomic rationale."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q042",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which component typically accounts for the largest fraction of GDP in developed market economies like the United States?",
+      "options": [
+        "Government Purchases (G)",
+        "Business Investment (I)",
+        "Consumption (C)",
+        "Net Exports (NX)"
+      ],
+      "answer": 2,
+      "explanation": "Household consumption is the largest component, often exceeding 65% in the U.S.",
+      "evidence": "Consumption by households typically accounts for the largest fraction of GDP in developed market economies, often exceeding 65% in the United States."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Standard GDP fact."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q043",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "How do economists distinguish physical output growth from price inflation in national accounting?",
+      "options": [
+        "By calculating Real GDP using constant base-year prices",
+        "By increasing Nominal GDP by the foreign exchange rate",
+        "By excluding all service-sector production",
+        "By counting only exports and excluding imports"
+      ],
+      "answer": 0,
+      "explanation": "Real GDP adjusts for inflation by fixing prices to a constant base year.",
+      "evidence": "economists calculate Real GDP, which measures total production using constant base-year prices."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurate economic definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q044",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What formula calculates the GDP deflator price index?",
+      "options": [
+        "(Nominal GDP / Real GDP) * 100",
+        "(Real GDP / Nominal GDP) * 100",
+        "(Exports - Imports) / GDP * 100",
+        "(Consumption + Investment) / Government * 100"
+      ],
+      "answer": 0,
+      "explanation": "The deflator is (Nominal GDP / Real GDP) * 100.",
+      "evidence": "calculated as (Nominal GDP / Real GDP) multiplied by 100."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Option D is an unnatural distractor."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Distractor D is synthetic."
+    }
+  },
+  {
+    "question": {
+      "id": "q045",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following is explicitly cited in the text as a limitation of GDP as a well-being indicator?",
+      "options": [
+        "It excludes non-market care work, leisure time, and environmental quality",
+        "It fails to measure physical manufacturing output",
+        "It cannot be measured annually",
+        "It excludes corporate capital investments"
+      ],
+      "answer": 0,
+      "explanation": "GDP does not account for unpaid household work, environmental degradation, or inequality.",
+      "evidence": "GDP does not capture non-market economic activities, such as unpaid care work... environmental degradation, resource depletion, leisure time"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Well-defined limitation."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q046",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What components comprise Net Exports (NX) in the expenditure formula GDP = C + I + G + NX?",
+      "options": [
+        "Exports minus Imports (X - M)",
+        "Imports minus Exports (M - X)",
+        "Exports plus Imports (X + M)",
+        "Domestic sales minus Foreign sales"
+      ],
+      "answer": 0,
+      "explanation": "Net Exports is exports minus imports.",
+      "evidence": "Net Exports (NX = Exports - Imports). Thus, GDP = C + I + G + (X - M)."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Basic macro formula."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q047",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Nominal GDP evaluates national production using constant base-year prices rather than current prices.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Nominal GDP uses actual current prices; Real GDP uses constant base-year prices.",
+      "evidence": "Nominal GDP evaluates national production using the actual prices prevailing in the year the output was produced."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Clear nominal/real distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q048",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Both the expenditure approach and national income approach yield identical GDP totals due to the circular flow of income.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "The circular flow ensures expenditure equals income.",
+      "evidence": "using either the expenditure approach or the national income approach, which yield identical totals due to the circular flow of income."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct quote verification."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q049",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "GDP includes informal economic transactions and unpaid household child care labor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "GDP omits non-market and informal economic activities.",
+      "evidence": "GDP does not capture non-market economic activities, such as unpaid care work, household labor, or informal economic transactions."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Standard GDP boundary."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q050",
+      "source_id": "src05_macroeconomics_gdp",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Nominal GDP can increase purely because of rising prices without any change in the physical quantity of goods produced.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Price inflation inflates nominal GDP without increasing real goods.",
+      "evidence": "Consequently, nominal GDP can rise purely because of inflation rather than an increase in real output."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Key macro insight."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q051",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the approximate duration that iconic memory preserves visual sensory traces?",
+      "options": [
+        "250 to 500 milliseconds",
+        "3 to 4 seconds",
+        "7 minutes",
+        "Indefinitely"
+      ],
+      "answer": 0,
+      "explanation": "Iconic memory holds visual traces for 250 to 500 ms.",
+      "evidence": "Iconic memory holds visual sensory traces for approximately 250 to 500 milliseconds"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Sensory memory timing."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q052",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What cognitive strategy organizes isolated bits of information into coherent, higher-order units to expand working memory capacity?",
+      "options": [
+        "Interference",
+        "Chunking",
+        "Decay",
+        "Transduction"
+      ],
+      "answer": 1,
+      "explanation": "Chunking groups items to overcome working memory capacity limits.",
+      "evidence": "Working memory capacity can be effectively expanded through chunking, the cognitive grouping of isolated bits of data"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Core memory technique."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q053",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "According to George Miller's classic 1956 research, what is the capacity of short-term memory?",
+      "options": [
+        "1 to 2 items",
+        "Seven plus-or-minus two items",
+        "20 to 30 items",
+        "Unlimited capacity"
+      ],
+      "answer": 1,
+      "explanation": "Miller's Magic Number is 7 +/- 2 chunks.",
+      "evidence": "George Miller identified that short-term memory can store roughly seven plus-or-minus two meaningful units of information"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Famous psychology finding."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q054",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What form of long-term explicit memory stores personally experienced autobiographical events?",
+      "options": [
+        "Episodic memory",
+        "Semantic memory",
+        "Procedural memory",
+        "Echoic memory"
+      ],
+      "answer": 0,
+      "explanation": "Episodic memory covers autobiographical life events.",
+      "evidence": "Explicit memory encompasses episodic memory (personally experienced autobiographical events)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "LTM categorization."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q055",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What type of forgetting occurs when newly learned information impairs the ability to retrieve previously stored memories?",
+      "options": [
+        "Retroactive interference",
+        "Proactive interference",
+        "Chunking failure",
+        "Sensory decay"
+      ],
+      "answer": 0,
+      "explanation": "Retroactive interference occurs when new learning disrupts old memories.",
+      "evidence": "Conversely, retroactive interference occurs when new learning disrupts the retrieval of previously stored information."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Proactive vs retroactive distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q056",
+      "source_id": "src06_cognitive_psychology",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which component of Alan Baddeley's working memory model is responsible for auditory rehearsal?",
+      "options": [
+        "Visuospatial sketchpad",
+        "Phonological loop",
+        "Central executive",
+        "Episodic buffer"
+      ],
+      "answer": 1,
+      "explanation": "The phonological loop handles auditory and verbal information.",
+      "evidence": "a phonological loop for auditory rehearsal, a visuospatial sketchpad for visual imagery"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Baddeley working memory components."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q057",
+      "source_id": "src06_cognitive_psychology",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Long-term memory has a strictly limited capacity and can only hold memories for up to seven days.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "LTM has essentially unlimited capacity and can store memories for decades.",
+      "evidence": "Long-term memory (LTM) has essentially unlimited capacity and can preserve memories for decades."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct contradiction of text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q058",
+      "source_id": "src06_cognitive_psychology",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Echoic memory preserves auditory traces for approximately three to four seconds.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Echoic memory lasts 3 to 4 seconds, longer than iconic memory.",
+      "evidence": "echoic memory preserves auditory traces for approximately three to four seconds."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Auditory memory timing."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q059",
+      "source_id": "src06_cognitive_psychology",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Procedural memory, such as knowing how to ride a bicycle, is a form of explicit declarative memory.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Procedural memory is implicit (non-declarative) memory.",
+      "evidence": "Implicit memory encompasses procedural memory (motor skills and habits, such as riding a bicycle)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Implicit vs explicit classification."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q060",
+      "source_id": "src06_cognitive_psychology",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Proactive interference occurs when older memories hinder the recall of newly learned information.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Proactive = past interferes with new.",
+      "evidence": "Proactive interference arises when old information hinders the recall of newly acquired information."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurate definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q061",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What single stellar parameter is most critical in dictating a star's luminosity, fuel consumption, and lifetime?",
+      "options": [
+        "Initial mass",
+        "Rotational speed",
+        "Magnetic field strength",
+        "Number of orbiting planets"
+      ],
+      "answer": 0,
+      "explanation": "Initial mass dictates every stage of a star's evolution.",
+      "evidence": "A star's initial mass is the single most critical parameter dictating its luminosity, core temperature, fuel consumption rate, and ultimate demise."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Core astronomy principle."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q062",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Approximately what percentage of its total lifetime does a star spend on the Main Sequence?",
+      "options": [
+        "10%",
+        "50%",
+        "90%",
+        "99.9%"
+      ],
+      "answer": 2,
+      "explanation": "Stars spend about 90% of their lives fusing hydrogen on the main sequence.",
+      "evidence": "where it spends approximately 90% of its lifetime."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direct numerical fact."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q063",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What physical mechanism supports a white dwarf against gravitational collapse?",
+      "options": [
+        "Thermal nuclear fusion pressure",
+        "Electron degeneracy pressure",
+        "Neutron degeneracy pressure",
+        "Magnetic dipole radiation"
+      ],
+      "answer": 1,
+      "explanation": "White dwarfs are held up by electron degeneracy pressure.",
+      "evidence": "White dwarfs are supported against gravitational collapse by electron degeneracy pressure"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Degeneracy pressure distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q064",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Why does iron (Fe) core fusion trigger the collapse of high-mass stars?",
+      "options": [
+        "Iron fusion is endothermic and absorbs energy rather than releasing it",
+        "Iron atoms disintegrate into pure hydrogen instantly",
+        "Iron has lower density than carbon and floats to the surface",
+        "Iron fusion generates excessive outward radiation pressure"
+      ],
+      "answer": 0,
+      "explanation": "Iron fusion absorbs energy, extinguishing pressure support and causing core collapse.",
+      "evidence": "Iron fusion is endothermic and absorbs energy rather than releasing it, abruptly extinguishing outward radiation pressure."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Key astrophysical mechanism."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q065",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What remnant core mass threshold (Tolman-Oppenheimer-Volkoff limit) determines collapse into a black hole?",
+      "options": [
+        "Below 1.4 solar masses",
+        "Roughly 2.2 to 3 solar masses",
+        "Exactly 8 solar masses",
+        "Over 100 solar masses"
+      ],
+      "answer": 1,
+      "explanation": "Cores exceeding the TOV limit (~2.2-3 M_sun) collapse into black holes.",
+      "evidence": "for progenitor stars with cores exceeding the Tolman-Oppenheimer-Volkoff limit (roughly 2.2 to 3 solar masses), an inescapable Black Hole."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Upper mass limit for neutron stars."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q066",
+      "source_id": "src07_stellar_evolution",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What nuclear process fuses helium into carbon and oxygen in red giant cores at ~100 million Kelvin?",
+      "options": [
+        "Proton-proton chain",
+        "CNO cycle",
+        "Triple-alpha process",
+        "Silicon burning"
+      ],
+      "answer": 2,
+      "explanation": "The triple-alpha process converts three helium nuclei into carbon.",
+      "evidence": "the triple-alpha process begins, fusing helium into carbon and oxygen."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Nuclear fusion pathway."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q067",
+      "source_id": "src07_stellar_evolution",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Stars are held in hydrostatic equilibrium when outward thermal pressure balances inward gravitational collapse.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Hydrostatic equilibrium is the balance of gravity and pressure.",
+      "evidence": "held in hydrostatic equilibrium, where the outward thermal pressure generated by nuclear fusion balances the inward gravitational collapse."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Core astronomy definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q068",
+      "source_id": "src07_stellar_evolution",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Intermediate-mass stars like the Sun eventually explode as Type II core-collapse supernovae.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Stars under 8 solar masses shed envelopes as planetary nebulae and leave white dwarfs.",
+      "evidence": "The outer atmospheric layers are gently expelled as an expanding fluorescent planetary nebula, leaving behind the inert, dense degenerate core: a White Dwarf."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 0,
+      "rationale": "True/false negation is slightly double-negative in context."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 0,
+      "rationale": "Double negation causes ambiguity."
+    }
+  },
+  {
+    "question": {
+      "id": "q069",
+      "source_id": "src07_stellar_evolution",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Hydrogen fusion in main sequence stars begins when core temperatures reach approximately 10 million Kelvin.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Fusion ignites around 10 million K.",
+      "evidence": "until core temperatures reach approximately 10 million Kelvin, triggering the fusion of hydrogen into helium"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Numerical threshold verified."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q070",
+      "source_id": "src07_stellar_evolution",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Neutron stars are supported against gravitational collapse by electron degeneracy pressure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Neutron stars are supported by neutron degeneracy pressure; white dwarfs use electron degeneracy.",
+      "evidence": "Neutron Star (supported by neutron degeneracy pressure)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Pressure mechanism contrast."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q071",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which Article of the U.S. Constitution vests legislative power in a bicameral Congress?",
+      "options": [
+        "Article I",
+        "Article II",
+        "Article III",
+        "Article IV"
+      ],
+      "answer": 0,
+      "explanation": "Article I establishes the legislative branch.",
+      "evidence": "Article I vests legislative authority in a bicameral Congress comprising the Senate and the House of Representatives."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Constitutional structure."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q072",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What proportion of both houses of Congress is required to override a presidential veto?",
+      "options": [
+        "Simple majority (50% + 1)",
+        "Three-fifths majority",
+        "Two-thirds supermajority",
+        "Three-fourths majority"
+      ],
+      "answer": 2,
+      "explanation": "A two-thirds vote in both the House and Senate overrides a veto.",
+      "evidence": "Congress may override a presidential veto with a two-thirds supermajority in both chambers."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Veto override requirement."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q073",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In which landmark Supreme Court case was the principle of judicial review established in 1803?",
+      "options": [
+        "McCulloch v. Maryland",
+        "Marbury v. Madison",
+        "Gibbons v. Ogden",
+        "Brown v. Board of Education"
+      ],
+      "answer": 1,
+      "explanation": "Marbury v. Madison established judicial review.",
+      "evidence": "established by Chief Justice John Marshall in the landmark Supreme Court decision Marbury v. Madison (1803)."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Historical legal precedent."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q074",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which Constitutional Amendment reserves powers not delegated to the national government to the states or people?",
+      "options": [
+        "First Amendment",
+        "Fifth Amendment",
+        "Tenth Amendment",
+        "Fourteenth Amendment"
+      ],
+      "answer": 2,
+      "explanation": "The Tenth Amendment reserves non-delegated powers to the states.",
+      "evidence": "Under the Tenth Amendment, powers not delegated to the United States by the Constitution... are reserved to the states"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Bill of Rights provision."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q075",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What power does the Senate hold regarding presidential appointments of ambassadors, federal judges, and cabinet officers?",
+      "options": [
+        "Power of advice and consent (confirmation)",
+        "Exclusive authority to nominate candidates",
+        "Authority to unilaterally remove sitting judges",
+        "Line-item veto power over judicial opinions"
+      ],
+      "answer": 0,
+      "explanation": "The Senate exercises advice and consent to confirm appointments.",
+      "evidence": "The Senate possesses the power of advice and consent, confirming presidential appointments of ambassadors, federal judges, and cabinet officers"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Separation of powers detail."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q076",
+      "source_id": "src08_us_constitution",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Where in the Constitution are the enumerated powers of Congress, such as regulating interstate commerce, listed?",
+      "options": [
+        "Article I, Section 8",
+        "Article II, Section 2",
+        "Article III, Section 1",
+        "Preamble"
+      ],
+      "answer": 0,
+      "explanation": "Article I, Section 8 lists enumerated legislative powers.",
+      "evidence": "enumerated powers, such as regulating interstate commerce and coining money, belong to the national government under Article I, Section 8."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Specific clause citation."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q077",
+      "source_id": "src08_us_constitution",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "The principle of judicial review is explicitly and word-for-word written in the original 1787 text of the Constitution.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Judicial review was established through judicial precedent in Marbury v. Madison, not explicit text.",
+      "evidence": "Although not explicitly stated in the constitutional text, the principle of judicial review... was firmly established by Chief Justice John Marshall"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Careful constitutional fact."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q078",
+      "source_id": "src08_us_constitution",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "The Senate must ratify international treaties by a two-thirds vote.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Treaty ratification requires a two-thirds supermajority in the Senate.",
+      "evidence": "as well as ratifying international treaties by a two-thirds vote."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Accurate treaty power rule."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q079",
+      "source_id": "src08_us_constitution",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Federalism describes horizontal division of power between legislative, executive, and judicial branches.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Federalism is vertical division between national and state governments; horizontal is separation of powers.",
+      "evidence": "Federalism represents the vertical distribution of power between the national government and individual state governments."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Vertical vs horizontal distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q080",
+      "source_id": "src08_us_constitution",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "The President of the United States can unilaterally amend the Constitution without congressional or state approval.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Amendments require congressional supermajorities and state ratifications.",
+      "evidence": "To prevent tyranny and arbitrary accumulation of authority, the Framers divided governmental powers... checks and balances"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 0,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Requires external knowledge of Article V amendment process not fully detailed in excerpt."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 0,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Specific ratification ratios not fully grounded in provided excerpt."
+    }
+  },
+  {
+    "question": {
+      "id": "q081",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which heart structure functions as the primary natural pacemaker, initiating action potentials?",
+      "options": [
+        "Atrioventricular (AV) node",
+        "Sinoatrial (SA) node",
+        "Bundle of His",
+        "Purkinje fibers"
+      ],
+      "answer": 1,
+      "explanation": "The SA node in the right atrium is the primary pacemaker.",
+      "evidence": "The sinoatrial (SA) node, situated in the superior wall of the right atrium, functions as the primary natural pacemaker"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Standard anatomy question."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q082",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which heart chamber pumps deoxygenated blood through the pulmonary semilunar valve into the lungs?",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "answer": 1,
+      "explanation": "The right ventricle pumps blood into the pulmonary circuit.",
+      "evidence": "right ventricle, which pumps it through the pulmonary semilunar valve into the pulmonary trunk."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Circulation pathway."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q083",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What valve lies between the left atrium and the left ventricle?",
+      "options": [
+        "Tricuspid valve",
+        "Bicuspid (mitral) valve",
+        "Aortic semilunar valve",
+        "Pulmonary semilunar valve"
+      ],
+      "answer": 1,
+      "explanation": "The bicuspid/mitral valve separates the left atrium and ventricle.",
+      "evidence": "It passes through the bicuspid (mitral) valve into the thick, highly muscular left ventricle."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Valve identification."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q084",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What occurs during the ventricular systole phase of the cardiac cycle?",
+      "options": [
+        "Myocardial contraction and blood ejection",
+        "Myocardial relaxation and chamber filling",
+        "Atrial filling from the venae cavae",
+        "Complete electrical repolarization of the SA node"
+      ],
+      "answer": 0,
+      "explanation": "Systole is contraction and ejection; diastole is relaxation and filling.",
+      "evidence": "systole (myocardial contraction and blood ejection) and diastole (myocardial relaxation and chamber filling)."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Cardiac cycle phase definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q085",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Why does the electrical impulse briefly delay at the atrioventricular (AV) node?",
+      "options": [
+        "To allow complete ventricular repolarization before systole",
+        "To allow complete atrial emptying before ventricular contraction",
+        "To prevent oxygenated blood from entering pulmonary veins",
+        "To recharge the sinoatrial pacemaker action potential"
+      ],
+      "answer": 1,
+      "explanation": "The AV delay ensures atria finish ejecting blood into ventricles before ventricles contract.",
+      "evidence": "undergo a brief delay allowing complete atrial emptying, and descend rapidly through the bundle of His"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Option C is implausible given the direction of pulmonary circulation."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 0,
+      "no_ambiguity": 1,
+      "rationale": "Option C is biologically implausible."
+    }
+  },
+  {
+    "question": {
+      "id": "q086",
+      "source_id": "src09_human_circulatory_system",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Through which vessels does oxygenated blood return from the lungs to the left atrium?",
+      "options": [
+        "Superior vena cava",
+        "Pulmonary trunk",
+        "Four pulmonary veins",
+        "Coronary sinus"
+      ],
+      "answer": 2,
+      "explanation": "Four pulmonary veins bring oxygenated blood to the left atrium.",
+      "evidence": "Oxygenated blood returns to the heart via four pulmonary veins entering the left atrium."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Pulmonary circulation anatomical precision."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q087",
+      "source_id": "src09_human_circulatory_system",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "The heart requires direct continuous neural input from the brain to initiate every heartbeat.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Intrinsic conduction from the SA node initiates heartbeats without direct neural commands.",
+      "evidence": "Intrinsic electrical conduction coordinates this pumping action without requiring direct neural input."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Autorhythmicity fact."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q088",
+      "source_id": "src09_human_circulatory_system",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "The left ventricle possesses thicker muscular walls than the right ventricle because it propels blood into systemic circulation.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Left ventricle pumps against high systemic resistance.",
+      "evidence": "thick, highly muscular left ventricle. The left ventricle contracts with substantial pressure to propel oxygenated blood... into the systemic aorta"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Anatomical comparison."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q089",
+      "source_id": "src09_human_circulatory_system",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Deoxygenated blood returns from peripheral tissues via the pulmonary veins into the right atrium.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Deoxygenated blood returns via the venae cavae; pulmonary veins carry oxygenated blood.",
+      "evidence": "Deoxygenated blood returns from systemic tissues via the superior and inferior venae cavae into the right atrium."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Classic vessel confusion test."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q090",
+      "source_id": "src09_human_circulatory_system",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "Purkinje fibers trigger coordinated ventricular contraction proceeding from the apex upward toward the arterial trunks.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Ventricular contraction starts at apex to pump blood upward into great arteries.",
+      "evidence": "Purkinje fibers to trigger coordinated ventricular contraction from the apex upward."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Direction of conduction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q091",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What term describes a closed system of stratification where individual status is ascribed at birth and permanent?",
+      "options": [
+        "Class system",
+        "Caste system",
+        "Meritocracy",
+        "Feudal estate"
+      ],
+      "answer": 1,
+      "explanation": "A caste system prescribes status at birth with virtually no social mobility.",
+      "evidence": "The classic illustration is a caste system, where social standing is permanent"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Basic sociology definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q092",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What type of social mobility describes changes in social class between different generations of a family?",
+      "options": [
+        "Intragenerational mobility",
+        "Intergenerational mobility",
+        "Structural stagnation",
+        "Ascribed descent"
+      ],
+      "answer": 1,
+      "explanation": "Intergenerational mobility occurs across family generations.",
+      "evidence": "Intergenerational mobility describes a difference in social class between different generations of a family"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Generational mobility distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q093",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "According to the functionalist Davis-Moore thesis (1945), what is the primary societal benefit of social stratification?",
+      "options": [
+        "It ensures the most qualified people fill demanding, socially critical roles",
+        "It eliminates wage competition across occupational sectors",
+        "It guarantees equal distribution of wealth across all social classes",
+        "It protects the bourgeoisie from proletariat rebellions"
+      ],
+      "answer": 0,
+      "explanation": "Davis-Moore asserts unequal rewards motivate people to fill critical, difficult roles.",
+      "evidence": "rewarding difficult, highly skilled, or socially critical occupations with greater prestige and income ensures that the most qualified individuals pursue demanding roles."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Functionalist theoretical argument."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q094",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In Karl Marx's conflict theory analysis, who are the 'proletariat'?",
+      "options": [
+        "Owners of the means of production",
+        "Workers who sell their labor to survive",
+        "Religious leaders prescribing caste standing",
+        "Civil servants maintaining the judicial system"
+      ],
+      "answer": 1,
+      "explanation": "Marx defined the proletariat as the working class selling labor.",
+      "evidence": "bourgeoisie (who own the means of production) and the proletariat (workers who sell their labor)"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Marxist terminology."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q095",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following defines an open system of stratification like a class system?",
+      "options": [
+        "It is based on achievement and allows for social mobility",
+        "Marriage is strictly mandated to occur only within one's birth tier",
+        "Occupational pathways are determined by astrological alignment at birth",
+        "Status cannot change under any circumstances across a lifetime"
+      ],
+      "answer": 0,
+      "explanation": "Open class systems allow status changes based on achievement.",
+      "evidence": "Open systems, in contrast, are based on achievement and allow for social mobility."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Open vs closed system distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q096",
+      "source_id": "src10_social_stratification",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What is intragenerational social mobility?",
+      "options": [
+        "Changes in an individual's social standing within their own adult lifetime",
+        "A child attaining a higher economic class than their parents",
+        "Caste reclassification enacted by international treaties",
+        "Migration between rural and urban geographic districts"
+      ],
+      "answer": 0,
+      "explanation": "Intragenerational = within one person's lifetime.",
+      "evidence": "Intragenerational mobility refers to changes in an individual's social standing within their own adult lifetime."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Precise mobility definition."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q097",
+      "source_id": "src10_social_stratification",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Sociologists view social stratification as simply a reflection of individual personal differences rather than a trait of society.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Stratification is a trait of society that persists over generations.",
+      "evidence": "Sociologists emphasize that stratification is a trait of society, not simply a reflection of individual differences"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Fundamental sociological principle."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q098",
+      "source_id": "src10_social_stratification",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "In a caste system, endogamous marriage within one's assigned caste is strictly enforced.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Caste systems require marriage within the same group.",
+      "evidence": "endogamous marriage within one's caste is strictly enforced"
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Caste characteristic."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  },
+  {
+    "question": {
+      "id": "q099",
+      "source_id": "src10_social_stratification",
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Conflict theorists agree with functionalists that social stratification is inherently beneficial and fair for all social classes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Conflict theorists argue stratification perpetuates exploitation and inequality.",
+      "evidence": "In sharp contrast, conflict theorists, influenced by Karl Marx, argue that stratification perpetuates economic exploitation and inequality."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 0,
+      "rationale": "Word 'inherently' is not directly used in the text."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Captures functionalist stance."
+    }
+  },
+  {
+    "question": {
+      "id": "q100",
+      "source_id": "src10_social_stratification",
+      "type": "true_false",
+      "difficulty": "hard",
+      "question": "The Davis-Moore thesis posits that social stratification is a dysfunctional mechanism created by the bourgeoisie to exploit the proletariat.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Davis-Moore is functionalist and argues stratification is beneficial; Marx argues it is exploitative.",
+      "evidence": "The functionalist perspective, notably articulated in the Davis-Moore thesis (1945), posits that social stratification has beneficial consequences for society."
+    },
+    "human_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Theoretical synthesis distinction."
+    },
+    "judge_rating": {
+      "answerable_from_pdf": 1,
+      "exactly_one_correct": 1,
+      "plausible_distractors": 1,
+      "no_ambiguity": 1,
+      "rationale": "Verified."
+    }
+  }
+]
