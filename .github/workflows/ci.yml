@@ -47,17 +47,20 @@ jobs:
       - name: Install evaluation harness
         run: |
           uv venv
-          uv pip install -e eval/
+          uv pip install -e "eval/[dev]"
 
       - name: Run lint and type checks
         run: |
-          uv run ruff check eval
-          uv run mypy eval/src
+          source .venv/bin/activate
+          ruff check eval
+          mypy eval/src
 
       - name: Run evaluation tests
         run: |
-          uv run pytest eval/tests -v
+          source .venv/bin/activate
+          pytest eval/tests -v
 
       - name: Verify benchmark runner execution
         run: |
-          uv run python -m quiz_eval.runner
+          source .venv/bin/activate
+          python -m quiz_eval.runner
